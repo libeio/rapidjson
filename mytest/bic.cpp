@@ -10,7 +10,7 @@ void BIC_MESSAGE::Serialize(std::string *s)
     }
     
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     std::string sh;
     header->Serialize(&sh);
@@ -85,7 +85,7 @@ void BIC_MESSAGE::ExtractPayload(const std::string &s)
 void BIC_TEST::Serialize(std::string *s)
 {
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     writer.StartObject();
 
@@ -160,7 +160,7 @@ void BIC_TEST::Structuralize(const std::string &s)
 void BIC_HEADER::Serialize(std::string *s)
 {
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     writer.StartObject();
     
@@ -189,7 +189,7 @@ void BIC_HEADER::Structuralize(const std::string &s)
 void BIC_GUARDRAGON::Serialize(std::string *s)
 {
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     writer.StartObject();
 
@@ -214,7 +214,7 @@ void BIC_GUARDRAGON::Structuralize(const std::string &s)
 void BIC_SUMMON::Serialize(std::string *s)
 {
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     writer.StartObject();
 
@@ -241,7 +241,7 @@ void BIC_SUMMON::Structuralize(const std::string &s)
 void BIC_MONSTER::Serialize(std::string *s)
 {
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     writer.StartObject();
 
@@ -278,7 +278,7 @@ void BIC_MONSTER::Structuralize(const std::string &s)
 void BIC_BITRON::Serialize(std::string *s)
 {
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     writer.StartObject();
 
@@ -303,7 +303,7 @@ void BIC_BITRON::Structuralize(const std::string &s)
 void BIC_BLOCKRON::Serialize(std::string *s)
 {
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     writer.StartObject();
 
@@ -334,7 +334,7 @@ void BIC_BLOCKRON::Structuralize(const std::string &s)
 void BIC_BOMBER::Serialize(std::string *s)
 {
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     writer.StartObject();
 
@@ -365,7 +365,7 @@ void BIC_BOMBER::Structuralize(const std::string &s)
 void BIC_BETWEEN::Serialize(std::string *s)
 {
     rapidjson::StringBuffer sb;
-    rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(sb);
+    rapidjson::Writer<rapidjson::StringBuffer> writer(sb);
 
     writer.StartObject();
 
